@@ -344,6 +344,30 @@ select {
   margin-top: 12px;
 }
 
+.social-auth {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.social-btn {
+  border: 1px solid var(--border);
+  background: #0f1727;
+  color: var(--text);
+  padding: 11px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 650;
+}
+
+.social-btn.google:hover {
+  border-color: #4285f4;
+}
+
+.social-btn.facebook:hover {
+  border-color: #1877f2;
+}
+
 .site-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   padding: 26px 0;
