@@ -45,6 +45,35 @@ body {
   gap: 20px;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lang-switch {
+  display: inline-flex;
+  background: #0f1727;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.lang-btn {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  padding: 7px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.lang-btn.active {
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: #fff;
+}
+
 .brand {
   font-weight: 800;
   letter-spacing: 0.2px;
@@ -289,5 +318,13 @@ textarea {
 
   .nav nav {
     display: none;
+  }
+
+  .header-actions {
+    margin-left: auto;
+  }
+
+  .lang-switch {
+    order: 2;
   }
 }
